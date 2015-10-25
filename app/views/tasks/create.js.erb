@@ -1,2 +1,7 @@
 $('#tasks').html("<%= j (render @tasks) %>");
 $('#task-form').slideUp(350);
+<% if @tasks.count > 0 %>
+  $('#header').html("You've got stuff to do!")
+<% else %>
+  $('#header').html("Congrats! Your list is clear!")
+<% end %>
