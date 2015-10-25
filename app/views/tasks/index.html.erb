@@ -4,11 +4,15 @@
   <div class="col-sm-3">
     <div id="task-form" style="display:none"></div>
     <%= link_to new_task_path, remote: true do %>
-      <button class="btn btn-default add-btn"><span class="glyphicon glyphicon-plus"></span> Add Task </button>
+      <button class="btn btn-info add-btn"><span class="glyphicon glyphicon-plus"></span> Add Task </button>
     <% end %>
   </div>
   <div class="col-sm-8 col-sm-offset-1">
-    <h1>Listing Tasks</h1>
+    <% if @tasks.count > 0 %>
+      <h1>You've got stuff to do!</h1>
+    <% else %>
+      <h1>Congrats! Your list is clear!</h1>
+    <% end %>
     <div id="tasks">
       <div class="row">
         <%= render @tasks %>

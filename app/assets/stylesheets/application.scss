@@ -20,6 +20,10 @@ body {
   background: rgb(197, 221, 224);
 }
 
+h1 {
+  color: #215A82;
+}
+
 h4 {
   color: lightslategrey;
   font-weight:bold;
@@ -27,7 +31,7 @@ h4 {
 }
 
 #task-form {
-  margin:10px 0;
+  margin: 10px 0;
   background: eastside;
   padding: 10px 10px 5px;
 }
@@ -43,5 +47,13 @@ a:hover {
 }
 
 .add-btn {
-	margin-left: 10px;
+  margin-top: 10px;
+}
+
+.edit-btn {
+  margin-top: -50px;
+}
+
+.btn-info {
+  background: #42A5E6;
 }
